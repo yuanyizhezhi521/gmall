@@ -12,4 +12,6 @@ public interface UserService {
 
     public List<UmsMemberReceiveAddress>     getDtailAddressByUserId(String memberId);
     public Integer delectUuserByid(Integer id);
+    public Integer updateUser(UmsMember user);
+
 }

@@ -43,4 +43,10 @@ public class UserServiceImpl implements UserService {
         int delete = userMapper.deleteByExample(e);
         return delete;
     }
+
+    @Override
+    public Integer updateUser(UmsMember user) {
+        int i = userMapper.updateByPrimaryKey(user);
+        return i;
+    }
 }

@@ -43,5 +43,11 @@ public class UserController {
         Integer integer = userService.delectUuserByid(id);
         return integer;
     }
+    @RequestMapping(value = "updateUser")
+    @ResponseBody
+    public Integer updateUser(UmsMember user){
+        Integer integer = userService.updateUser(user);
+        return integer;
+    }
 
 }
